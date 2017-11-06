@@ -1,0 +1,36 @@
+.grid-item {
+    float: left;
+    /*padding-left: 50px;*/
+}
+
+.nav-buttons {
+
+}
+
+.btn-large {
+    padding: 20px 15px;
+    font-size: 1.3em;
+}
+
+.btn {
+    display: inline-block;
+    line-height: normal;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid #111 ;
+    color: #111111;
+    width: 100%;
+}
+
+
+.button-wrapper {
+    width: 100%;
+    display: flex;
+    /*padding: 0 50px;*/
+    /*margin: 0 auto;*/
+    /*box-sizing: border-box;*/
+}
+
+i {
+    font-style: italic;
+}

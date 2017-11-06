@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Творческая мастерская. Спектакли</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <link rel='stylesheet' href='libs/owlcarousel/owl.carousel.css'/>
+    <link rel='stylesheet' href='libs/owlcarousel/owl.theme.default.css'/>
+    <script src="libs/jquery-3.2.1.js"></script>
+    <script src="libs/owlcarousel/owl.carousel.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.js"></script>
+</head>
+<body>
+
+<%- include('header', {activeNavElement: "art", headerLogoSrc: headerLogoSrc}); %>
+
+<main class="main-site grey-bg">
+
+    <div class="wrapper">
+
+        <div class="row">
+            <div class="item col-8 mid-col-12 mid-text">
+                <h1>Спектакли.</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="item col-4 mid-col-12 min-col-12">
+                <a href="art/detailed/12" class="common-btn-style">12 Белых Клавиш</a>
+            </div>
+            <div class="item item-mid-wear col-4 mid-col-6 min-col-12">
+                <a href="art/detailed/humor" class="common-btn-style">Юмор. Музыка. Любовь</a>
+            </div>
+            <div class="item item-mid-hang col-4 mid-col-6 min-col-12">
+                <a href="art/detailed/music" class="common-btn-style">Почувствуюй музыку</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="row">
+        <div class="item owl-carousel owl-theme">
+            <div>
+                <img src="images/play.jpg" class="common-btn-style theme-btn-style">
+            </div>
+            <div>
+                <img src="images/poster3.jpg" class="common-btn-style theme-btn-style">
+            </div>
+            <div>
+                <img src="images/feel1.jpg" class="common-btn-style theme-btn-style">
+            </div>
+            <div>
+                <img src="images/14.jpg" class="common-btn-style theme-btn-style">
+            </div>
+            <div>
+                <img src="images/15.jpg" class="common-btn-style theme-btn-style">
+            </div>
+            <div>
+                <img src="images/17.jpg" class="common-btn-style theme-btn-style">
+            </div>
+
+        </div>
+        </div>
+    </div>
+
+    <!--    <div class="wrapper">
+            <div class="row">
+                <div class="item col-6 mid-col-12 min-col-12">
+                    <img src="images/play.jpg" class="common-btn-style theme-btn-style">
+                </div>
+                <div class="item item-mid-wear col-6 mid-col-6 min-col-12">
+                    <img src="images/poster3.jpg" class="common-btn-style theme-btn-style">
+                </div>
+                <div class="item item-mid-wear col-6 mid-col-6 min-col-12">
+                    <img src="images/play2.jpg" class="common-btn-style theme-btn-style">
+                </div>
+            </div>
+        </div>-->
+
+
+</main>
+
+<%- include('footer', {footerLogoSrc: headerLogoSrc}); %>
+
+<script>
+    $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+            nav: false,
+            dots: true,
+            center: true,
+            items: 2,
+            loop: true,
+            margin: 10,
+//            responsive: {
+//                600: {
+//                    items: 4
+//                }
+//            }
+        });
+    })
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<header>
+    <div class="header-wrapper">
+        <div class="precontent">
+            <ul type="none" class="flex-container precontent-flex">
+                <li id="site-name" class="flex-element">
+                    <a href="/">
+                        <img src="<%=headerLogoSrc%>" class="footer-site-logo">
+                    </a>
+                </li>
+                <% if (activeNavElement == "art"){ %>
+                <li class="flex-element site-nav-active">
+                    <% } else{ %>
+                <li class="flex-element">
+                    <% } %>
+                    <a href="/art" class="site-nav-link">
+                        Спектакли
+                    </a>
+                </li>
+                <% if (activeNavElement == "corp"){ %>
+                <li class="flex-element site-nav-active">
+                    <% } else{ %>
+                <li class="flex-element">
+                    <% } %>
+                    <a href="/corp" class="site-nav-link">
+                        Мероприятия
+                    </a>
+                </li>
+                <% if (activeNavElement == "training"){ %>
+                <li class="flex-element site-nav-active">
+                    <% } else{ %>
+                <li class="flex-element">
+                    <% } %>
+                    <a href="/training" class="site-nav-link">
+                        Тренинги
+                    </a>
+                </li>
+                <% if (activeNavElement == "video"){ %>
+                <li class="flex-element site-nav-active">
+                    <% } else{ %>
+                <li class="flex-element">
+                    <% } %>
+                    <a href="/video" class="site-nav-link">
+                        Видео
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>

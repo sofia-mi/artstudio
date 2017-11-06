@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Творческая мастерская. Спектакли</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <script src="libs/jquery-3.2.1.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.js"></script>
+</head>
+<body>
+
+<%- include('header', {activeNavElement: "video", headerLogoSrc: headerLogoSrc}); %>
+
+<main class="main-site grey-bg">
+
+    <div class="wrapper">
+
+        <div class="row">
+            <div class="item col-8 mid-col-12 mid-text">
+                <h1>Видео.</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="row">
+            <div class="item col-6 mid-col-12 min-col-12 thumb-wrap">
+                <!--<iframe width="854" height="480" src="https://www.youtube.com/embed/L3470ew2AkM"-->
+                         <!--frameborder="0" allowfullscreen></iframe>-->
+                <iframe src="https://www.youtube.com/embed/L3470ew2AkM"
+                         frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="item item-mid-wear col-6 mid-col-6 min-col-12 thumb-wrap">
+                <iframe src="https://www.youtube.com/embed/9znJzW05JsU"
+                         frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="item item-mid-wear col-6 mid-col-6 min-col-12 thumb-wrap">
+                <iframe src="https://www.youtube.com/embed/ry9kuljnmXA"
+                         frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="item item-mid-wear col-6 mid-col-6 min-col-12 thumb-wrap">
+                <iframe src="https://www.youtube.com/embed/eOVflDMj3R8"
+                        frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+
+</main>
+
+  <%- include('footer', {footerLogoSrc: headerLogoSrc}); %>
+
+</body>

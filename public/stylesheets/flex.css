@@ -1,0 +1,46 @@
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.flex-container .flex-element:nth-child(1) {
+    flex: 1;
+    margin-left: 0 !important;
+}
+
+.precontent-flex .flex-element {
+    margin-left: 20px;
+    /*font-family: "HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;*/
+    /*font-family: 'Museo_Slab_500_2', sans-serif !important;*/
+    font-size: 18px;
+    line-height: 26px;
+    /*font-size: 16px;*/
+    /*line-height: 2;*/
+    /*font-size: 1.8em;*/
+}
+
+.flex-container-insta {
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flex-element-insta {
+    padding-bottom: 12px;
+}
+
+.flex-container-merch {
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flex-element-merch {
+    max-width: 250px;
+    max-height: 300px;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Subscribe</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <link rel='stylesheet' href='/stylesheets/subscribe.css'/>
+    <script src="libs/jquery-3.2.1.js"></script>
+    <script src="javascripts/subscribe.js"></script>
+  </head>
+  <body>
+    <%- include('header', {activeNavElement: "none", headerLogoSrc: headerLogoSrc}); %>
+
+    <main class="main-site grey-bg">
+      <div class="wrapper">
+        <div class="row">
+          <div class="subscribe-form-wrapper">
+            <h2>Subscribe</h2>
+            <form class="input-form-group" id="subscribe-form" method="post" action="">
+              <input type="text" name="firstName" placeholder="Enter Your First Name" required="">
+              <input type="text" name="lastName" placeholder="Enter Your Last Name" required="">
+              <input type="text" name="email" class="email" placeholder="Enter Your Email" required="" value="<%- email %>">
+              <input type="date" name="startSubscribeDate" data-placeholder="Enter Subscribe Start Date" required="" aria-required="true"/>
+              <input type="submit" value="Subscribe">
+            </form>
+            <div id="success-message" class="success-message">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <%- include('footer', {footerLogoSrc: headerLogoSrc}); %>
+
+  </body>
+</html>

@@ -1,2 +1,2 @@
 # artstudio
-Artstudio web application
+Artstudio web application based on NodeJS, MongoDB, Express.

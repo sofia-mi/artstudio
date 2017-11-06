@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Творческая мастерская. Тренинги</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <script src="/libs/jquery-3.2.1.js"></script>
+    <script src="/libs/bootstrap/js/bootstrap.js"></script>
+</head>
+<body>
+
+<%- include('header', {activeNavElement: "training", headerLogoSrc: headerLogoSrc}); %>
+
+<main class="main-site grey-bg">
+
+    <div class="wrapper">
+
+        <div class="row">
+            <div class="item col-8 mid-col-12 mid-text">
+                <h1><%=header%></h1>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <!--style="line-height: 2.5em"-->
+            <div class="item col-8 mid-col-12">
+                <div class=" training_description wpb">
+                    <%-description%>
+                </div>
+            </div>
+
+            <div class="item col-4 mid-col-12">
+                <div class="info_block wpb" style="background: url('<%=image1%>') no-repeat center/cover;"></div>
+                <div class="info_block wpb" style="background: url('<%=image2%>') no-repeat center/cover;"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+<%- include('footer', {footerLogoSrc: headerLogoSrc}); %>
+
+</body>

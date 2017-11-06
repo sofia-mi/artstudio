@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Творческая мастерская</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <!--<link href="stylesheets/buttons.css" rel="stylesheet" type="text/css">-->
+  <!--<link href="stylesheets/footer.css" rel="stylesheet" type="text/css">-->
+  <!--<link href="stylesheets/main.css" rel="stylesheet" type="text/css">-->
+  <!--<link href="stylesheets/collaborate_div_style.css" rel="stylesheet" type="text/css">-->
+  <!--<link href="stylesheets/flex.css" rel="stylesheet" type="text/css">-->
+  <!--<link href="stylesheets/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">-->
+  <script src="libs/jquery-3.2.1.js"></script>
+  <script src="libs/bootstrap/js/bootstrap.js"></script>
+</head>
+<body>
+
+<%- include('header', {activeNavElement: "index", headerLogoSrc: headerLogoSrc}); %>
+
+<div class="carousel-wrapper">
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="images/2-1400x458.jpeg" alt="...">
+        <!--<div class="carousel-caption">-->
+        <!--<p>Двенадцать белых клавиш</p>-->
+        <!--</div>-->
+      </div>
+      <div class="item">
+        <img src="images/5-1400x458.jpeg" alt="...">
+      </div>
+      <div class="item">
+        <img src="images/3-1400x458.jpg" alt="...">
+      </div>
+    </div>
+
+    <!--Controls-->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+<main class="main-site grey-bg">
+
+  <div class="wrapper">
+
+    <div class="row">
+      <div class="item col-8 mid-col-12 mid-text">
+        <h1>Вдохновляем. Обучаем. Развлекаем.</h1>
+      </div>
+      <!--<div class="item mid-shop-item col-4">
+          <a href="#" class="shop-btn">Shop All</a>
+      </div>-->
+    </div>
+
+    <div class="row">
+      <div class="item col-4 mid-col-12 min-col-12">
+        <a href="art" class="common-btn-style">Спектакли</a>
+      </div>
+      <div class="item item-mid-wear col-4 mid-col-6 min-col-12">
+        <a href="corp" class="common-btn-style">Мероприятия</a>
+      </div>
+      <div class="item item-mid-hang col-4 mid-col-6 min-col-12">
+        <a href="training" class="common-btn-style">Тренинги</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="row">
+      <div class="item col-4 mid-col-12 min-col-12">
+        <a href="art"> <img src="images/play.jpg" class="common-btn-style theme-btn-style"></a>
+      </div>
+      <div class="item item-mid-wear col-4 mid-col-6 min-col-12">
+        <a href="corp"><img src="images/4.jpg" class="common-btn-style theme-btn-style"></a>
+      </div>
+      <div class="item item-mid-hang col-4 mid-col-6 min-col-12">
+        <a href="training"><img src="images/training7.jpg" class="common-btn-style theme-btn-style"></a>
+      </div>
+    </div>
+  </div>
+
+  <!--<div class="wrapper">-->
+
+    <!--<div class="row">-->
+      <!--<div class="item col-8 mid-col-12 mid-text">-->
+        <!--<h1>Новости.</h1>-->
+      <!--</div>-->
+    <!--</div>-->
+
+    <!--<div class="row">-->
+      <!--<div class="item col-6 mid-col-6 min-col-12">-->
+        <!--<div class="common-btn-style">-->
+          <!--Новость 1-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--<div class="item item-mid-wear col-6 mid-col-6 min-col-12">-->
+        <!--<div class="common-btn-style">-->
+          <!--Новость 2-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+
+</main>
+
+<%- include('footer', {footerLogoSrc: headerLogoSrc}); %>
+
+</body>
+</html>

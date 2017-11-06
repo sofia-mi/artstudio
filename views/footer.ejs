@@ -1,0 +1,35 @@
+<footer>
+    <div class="header-wrapper">
+        <div>
+            <ul type="none" class="flex-container precontent-flex">
+                <li class="flex-element">
+                    <a href="/">
+                        <img src="<%=footerLogoSrc%>" class="footer-site-logo">
+                    </a>
+                </li>
+                <li class="flex-element" style="flex: 1;">
+                    <form class="input-form-group" id="subscribe-form" method="post" action="/subscribe">
+                        <input class="input-group-field" type="email" placeholder="email@example.com" id="email" name="email">
+                        <span class="input-group-button">
+                            <input class="button" type="submit" value="Subscribe">
+                        </span>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script>
+/*  $('#subscribe-form').submit(function(){
+    $.ajax({
+             type: 'POST',
+             url: "/subscribe",
+             data: $(this).serialize(),
+             success: function(){
+               $('#email')[0].value = "";
+             }
+           });
+    return false;
+  });*/
+</script>

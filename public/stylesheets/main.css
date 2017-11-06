@@ -1,0 +1,182 @@
+/*@font-face {
+    font-family: 'Museo_Slab_500_2';
+    src: url('../fonts/Museo_Slab_500_2-webfont.woff2') format('woff2'),
+    url('../fonts/Museo_Slab_500_2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}*/
+@font-face {
+    font-family: 'Firasansbook';
+    src: url('../fonts/Firasansbook.woff2') format('woff2'),
+    url('../fonts/Firasansbook.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Firasansbook', sans-serif !important;
+}
+
+.main-site {
+    /*margin-left: -50px;*/
+}
+
+.grey-bg {
+    background-color: #f9f9f9;
+}
+
+.one-third {
+    width: 33.333%;
+}
+
+
+.site-nav-link:hover, .site-nav-link:focus {
+    color: black!important;
+    text-decoration: none!important;
+}
+
+.site-nav-link {
+    text-decoration: none!important;
+    color: black;
+    position: relative;
+}
+
+.site-nav-active .site-nav-link:before {
+    visibility: visible !important;
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.site-nav-link:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    color: black;
+    visibility: hidden;
+
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    transform: scaleX(0);
+}
+
+.site-nav-link:hover:before {
+    visibility: visible;
+
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.header-wrapper {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding-right: 50px;
+}
+
+.carousel-wrapper {
+    width: 100%;
+    -webkit-padding-start: 0 !important;
+}
+
+
+.input-form-group {
+    width: 100%;
+    display: table;
+    border: 2px solid black;
+
+}
+
+.input-group-field {
+    display: table-cell;
+    width: 100%;
+}
+
+.input-group-button {
+    display: table-cell;
+}
+
+.button {
+    width: 100%;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+}
+
+img {
+    max-width:100%;
+    height:auto;
+    display: block;
+    /*height:100%;*/
+}
+
+.img12-1 {
+    background: url("../images/12(1).jpg") no-repeat center/cover;
+}
+
+.img12-2 {
+    background: url("../images/12(2).jpg") no-repeat center/cover;
+}
+
+.img12-3 {
+    background: url("../images/12(3).jpg") no-repeat center/cover;
+}
+.img12-4 {
+    background: url("../images/12(4).jpg") no-repeat center/cover;
+}
+
+.thumb-wrap {
+    position: relative;
+    padding-bottom: 25%;
+    padding-top:30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.thumb-wrap iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel .item {
+    width:100%;
+    height:auto;
+}
+
+.carousel-inner > .item > img {
+    min-width:100%;
+    height:auto;
+}
+
+/*.carousel-inner,.carousel,.item,.container,.fill {
+    height:100%;
+    width:100%;
+    !*background-position:center center;*!
+}*/
+
+/*
+.carousel,.item,.active{
+    height: 100%;
+}
+.carousel-inner{
+    height: 100%;
+}
+.fill {
+    width: 100%;
+    height: 100%;
+    !*background-position: center;*!
+    !*background-size: cover;*!
+}*/

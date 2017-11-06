@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Творческая мастерская. Спектакли</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <script src="/libs/jquery-3.2.1.js"></script>
+    <script src="/libs/bootstrap/js/bootstrap.js"></script>
+</head>
+<body>
+
+<%- include('header', {activeNavElement: "art", headerLogoSrc: headerLogoSrc}); %>
+
+<main class="main-site grey-bg art-detailed">
+    <div class="wrapper">
+        <div class="row">
+            <div class="item col-8 mid-col-12 mid-text">
+                <h1><%=title%></h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="item col-8 mid-col-12 mid-col-12">
+                <div class="info_block info_block_description wpb">
+                    <%=description%>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="item col-4 mid-col-12 mid-col-6">
+                <div class="info_block wpb" style="background: url('<%=image1%>') no-repeat center/cover;"></div>
+            </div>
+            <div class="item col-4 min-col-12 mid-col-6">
+                <div class="info_block wpe" style="background: url('<%=image2%>') no-repeat center/cover;"></div>
+            </div>
+
+        </div>
+
+        <div class="row common_block">
+            <div class="item col-4 min-col-12 mid-col-6">
+                <div class="info_block wpb" style="background: url('<%=image3%>') no-repeat center/cover;"></div>
+            </div>
+            <div class="item col-4 min-col-12 mid-col-6">
+                <div class="info_block wpe" style="background: url('<%=image4%>') no-repeat center/cover;"></div>
+            </div>
+            <div class="item col-4 mid-col-12">
+                <div class="sidebar">
+                    <% if (activeNavElement == "12"){ %>
+                    <div class="site-nav-active">
+                     <% } else{ %>
+                     <div>
+                     <% } %>
+                        <a href="12" class="site-nav-link">12 Белых Клавиш</a>
+                    </div>
+                     <% if (activeNavElement == "humor"){ %>
+                     <div class="site-nav-active">
+                     <% } else{ %>
+                     <div>
+                     <% } %>
+                        <a href="humor" class="site-nav-link">Юмор. Музыка. Любовь</a>
+                    </div>
+                     <% if (activeNavElement == "music"){ %>
+                     <div class="site-nav-active">
+                     <% } else{ %>
+                     <div>
+                     <% } %>
+                        <a href="music" class="site-nav-link">Почувствуюй музыку</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+  <%- include('footer', {footerLogoSrc: headerLogoSrc}); %>
+
+</body>
+</html>
