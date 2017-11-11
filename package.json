@@ -4,7 +4,8 @@
   "description": "Art studio",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "test": "echo testScriptsToImplement"
   },
   "dependencies": {
     "body-parser": "~1.17.1",
