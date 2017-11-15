@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Творческая мастерская. Мероприятия</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <script src="/libs/jquery-3.2.1.js"></script>
+    <script src="/libs/bootstrap/js/bootstrap.js"></script>
+</head>
+<body>
+
+<%- include('header', {activeNavElement: "event", headerLogoSrc: headerLogoSrc}); %>
+
+<main class="main-site grey-bg art-detailed">
+    <div class="wrapper">
+        <div class="row">
+            <div class="item col-8 mid-col-12 mid-text">
+                <h1><%=title%></h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="item col-8 mid-col-12 mid-col-12 event-info_block_description">
+                <div class="info_block_description wpb">
+                    <%-description%>
+                </div>
+            </div>
+
+            <div class="item col-4 mid-col-12 event-sidebar">
+                <div class="sidebar">
+                    <% if (activeNavElement == "wedding"){ %>
+                    <div class="site-nav-active">
+                        <% } else{ %>
+                        <div>
+                            <% } %>
+                            <a href="wed" class="site-nav-link">Свадьбы</a>
+                        </div>
+                        <% if (activeNavElement == "corp"){ %>
+                        <div class="site-nav-active">
+                            <% } else{ %>
+                            <div>
+                                <% } %>
+                                <a href="corp" class="site-nav-link">Корпоративы</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="item col-4 mid-col-12 mid-col-6">
+                <div class="info_block wpb" style="background: url('<%=image1%>') no-repeat center/cover;"></div>
+            </div>
+            <div class="item col-4 min-col-12 mid-col-6">
+                <div class="info_block wpe" style="background: url('<%=image2%>') no-repeat center/cover;"></div>
+            </div>
+
+        </div>
+
+        <div class="row common_block">
+            <div class="item col-4 min-col-12 mid-col-6">
+                <div class="info_block wpb" style="background: url('<%=image3%>') no-repeat center/cover;"></div>
+            </div>
+            <div class="item col-4 min-col-12 mid-col-6">
+                <div class="info_block wpe" style="background: url('<%=image4%>') no-repeat center/cover;"></div>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+<%- include('footer', {footerLogoSrc: headerLogoSrc}); %>
+
+</body>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Творческая мастерская. Мероприятия</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <link rel='stylesheet' href='libs/owlcarousel/owl.carousel.css'/>
+    <link rel='stylesheet' href='libs/owlcarousel/owl.theme.default.css'/>
+    <script src="libs/jquery-3.2.1.js"></script>
+    <script src="libs/owlcarousel/owl.carousel.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.js"></script>
+</head>
+<body>
+
+<%- include('header', {activeNavElement: "event", headerLogoSrc: headerLogoSrc}); %>
+
+<main class="main-site grey-bg">
+
+    <div class="wrapper">
+
+        <div class="row">
+            <div class="item col-8 mid-col-12 mid-text">
+                <h1>Мероприятия.</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="item col-6 mid-col-12 min-col-12">
+                <a href="event/detailed/wed" class="common-btn-style">Свадьбы</a>
+            </div>
+            <div class="item item-mid-wear col-6 mid-col-12 min-col-12">
+                <a href="event/detailed/corp" class="common-btn-style">Корпоративы</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="row">
+            <div class="item col-6 mid-col-12 min-col-12">
+                <a href="event/detailed/wed"> <img src="images/wed.jpg" class="common-btn-style theme-btn-style"></a>
+            </div>
+            <div class="item item-mid-wear col-6 mid-col-12 min-col-12">
+                <a href="event/detailed/corp"><img src="images/corp1.jpg" class="common-btn-style theme-btn-style"></a>
+            </div>
+        </div>
+    </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+</main>
+
+<%- include('footer', {footerLogoSrc: headerLogoSrc}); %>
+
+<script>
+    $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+            nav: false,
+            dots: true,
+            center: true,
+            items: 2,
+            loop: true,
+            margin: 10,
+//            responsive: {
+//                600: {
+//                    items: 4
+//                }
+//            }
+        });
+    })
+
+</script>
+
+</body>
+</html>

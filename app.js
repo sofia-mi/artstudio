@@ -12,6 +12,8 @@ var video = require('./routes/video');
 var subscribe   = require('./routes/subscribe');
 var corp   = require('./routes/corp');
 var training   = require('./routes/training');
+var about  = require('./routes/about');
+var event  = require('./routes/event');
 
 var app = express();
 
@@ -34,6 +36,8 @@ app.use('/video', video);
 app.use('/subscribe', subscribe);
 app.use('/corp', corp);
 app.use('/training', training);
+app.use('/about', about);
+app.use('/event', event);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

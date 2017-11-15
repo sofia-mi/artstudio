@@ -7,6 +7,15 @@
                         <img src="<%=headerLogoSrc%>" class="footer-site-logo">
                     </a>
                 </li>
+                <% if (activeNavElement == "about"){ %>
+                <li class="flex-element site-nav-active">
+                    <% } else{ %>
+                <li class="flex-element">
+                    <% } %>
+                    <a href="/about" class="site-nav-link">
+                        О нас
+                    </a>
+                </li>
                 <% if (activeNavElement == "art"){ %>
                 <li class="flex-element site-nav-active">
                     <% } else{ %>
@@ -16,12 +25,12 @@
                         Спектакли
                     </a>
                 </li>
-                <% if (activeNavElement == "corp"){ %>
+                <% if (activeNavElement == "event"){ %>
                 <li class="flex-element site-nav-active">
                     <% } else{ %>
                 <li class="flex-element">
                     <% } %>
-                    <a href="/corp" class="site-nav-link">
+                    <a href="/event" class="site-nav-link">
                         Мероприятия
                     </a>
                 </li>

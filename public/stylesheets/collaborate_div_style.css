@@ -83,6 +83,10 @@
     margin-right: 0;
 }
 
+.event-info_block_description .info_block_description {
+    height: auto;
+}
+
 .training_description {
     opacity: 0.7;
     font-size: 20px;
@@ -113,6 +117,11 @@
     /*top: -27.85em;*/
     top: -52rem;
     right: 0.625rem;
+}
+
+.event-sidebar .sidebar {
+    top: auto;
+    height: auto;
 }
 
 .sidebar a {
