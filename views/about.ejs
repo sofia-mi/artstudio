@@ -17,9 +17,26 @@
 
         <div class="row">
             <div class="item col-8 mid-col-12 mid-text">
-                <h1>О нас.</h1>
+                <h1><%=title%></h1>
             </div>
         </div>
+        <div class="row">
+
+            <!--style="line-height: 2.5em"-->
+            <div class="item col-8 mid-col-12">
+                <div class=" training_description wpb">
+                    <%-description%>
+                </div>
+            </div>
+
+            <div class="item col-4 mid-col-12">
+                <div class="info_block wpb" style="background: url('<%=image1%>') no-repeat center/cover;"></div>
+                <div class="info_block wpb" style="background: url('<%=image2%>') no-repeat center/cover;"></div>
+            </div>
+
+        </div>
+
+
     </div>
 
 </main>
